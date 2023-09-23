@@ -1,0 +1,36 @@
+# Create folder structure
+
+library(icesTAF)
+library(fs)
+
+cat("\014")
+  
+actual_dir = getwd()
+print (paste("Current directory: ", actual_dir, sep = ""))
+mkdir ("src")
+print (paste(actual_dir, "/src/ folder created", sep = ""))
+mkdir ("./src/R")
+print (paste(actual_dir, "/src/R/ folder created", sep = ""))
+mkdir ("./src/Phyton")
+print (paste(actual_dir, "/src/Python/ folder created", sep = ""))
+mkdir ("tests")
+print (paste(actual_dir, "/tests/ folder created", sep = ""))
+mkdir ("models")
+print (paste(actual_dir, "/models/ folder created", sep = ""))
+mkdir ("data")
+print (paste(actual_dir, "/data/ folder created", sep = ""))
+mkdir ("./data/raw")
+print (paste(actual_dir, "/data/raw/ folder created", sep = ""))
+mkdir ("./data/processed")
+print (paste(actual_dir, "/data/processed/ folder created", sep = ""))
+mkdir ("notebooks")
+print (paste(actual_dir, "/notebooks/ folder created", sep = ""))
+mkdir ("reports")
+print (paste(actual_dir, "/reports/ folder created", sep = ""))
+mkdir ("./reports/figures")
+print (paste(actual_dir, "/reports/figures/ folder created", sep = ""))
+
+
+cat("\014")
+print("Folder Structure Created")
+dir_tree(getwd(), recurse = 3)
