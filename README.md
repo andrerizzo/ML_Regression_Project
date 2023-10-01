@@ -1,4 +1,4 @@
-# Machine Learning Regression Project
+# Predict Car Prices with Machine Learning
 
 ### Objective:
 Perform Machine Learning regression techniques to predict car prices.
